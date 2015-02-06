@@ -1,0 +1,64 @@
+p {
+    @include adjust-font-size-to(18px);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+h1 {
+    @include adjust-font-size-to(24px);
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+h2 {
+    @include adjust-font-size-to(22px);
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+h3 {
+    @include adjust-font-size-to(20px);
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+a {
+    @include transition(all .5s);
+    font-weight: 400;
+    text-decoration: none;
+    color: $dgrey;
+}
+
+.subtitle {
+    margin: 0 auto 20px auto;
+    max-width: 650px;
+}
+
+.small {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+@media ($min_bp_b) {
+    p {
+        @include adjust-font-size-to(20px);
+    }
+
+    h1 {
+        @include adjust-font-size-to(34px);
+    }
+
+    h2 {
+        @include adjust-font-size-to(26px);
+    }
+
+    h3 {
+        @include adjust-font-size-to(24px);
+    }
+    
+    .subtitle {
+        margin: 0 auto 40px auto;
+        max-width: 650px;
+    }
+}

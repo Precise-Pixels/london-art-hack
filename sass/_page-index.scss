@@ -1,0 +1,284 @@
+header {
+	width: 100%;
+	/*height: 475px;*/
+	padding: 60px 20px;
+	position: relative;
+	text-align: center;
+	color: $white;
+	background: url(../img/header_bg.jpg) center $blue no-repeat;
+	background-size: cover;
+	z-index: 2;
+	#logo {
+		width: 100%;
+		max-width: 450px;
+		margin-bottom: 40px;
+	}
+	#logo2 {
+		width: 100%;
+		max-width: 450px;
+		margin-top: 20px;
+	}
+}
+
+.line {
+	position: absolute;
+	top: 151px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: white;
+	z-index: 3
+}
+
+#particles {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	@include opacity(0.2);
+	z-index: 1;
+}
+
+.info {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.logos {
+	margin: 40px 120px;
+	p {
+		margin-bottom: 0;
+	}
+	img {
+		padding: 0px 20px;
+		margin-top: 20px;
+	}
+}
+
+#concept-row {
+	margin: 40px 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.concept {
+	background: #EEE;
+	@include transition(all .5s);
+	p {
+		padding: 20px 0;
+		margin-bottom: 0;
+		font-size: 18px;
+		font-weight: 400;
+	}
+	&:hover {
+		background: #CCC;
+	}
+}
+
+.concept-content {
+	width: 100%;
+	max-width: 600px;
+	padding: 20px;
+	display: none;
+	h3 {
+		font-size: 22px;
+		font-weight: 400;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.concept-image {
+	width: 100%;
+	height: 150px;
+	background: #CCC;
+}
+
+.concept-image--trafalgar {
+	background: url(../img/concepts/trafalgar.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.concept-image--local {
+	background: url(../img/concepts/localart.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.concept-image--hoardings {
+	background: url(../img/concepts/hoardings.jpg) center no-repeat;
+	background-size: cover;	
+}
+
+.concept-image--studio {
+	background: url(../img/concepts/studio.jpg) center no-repeat;
+	background-size: cover;	
+}
+
+.accordian {
+	margin-top: 30px;
+	overflow: hidden;
+	height: auto;
+}
+
+.accordian-switch {
+	height: 60px;
+	margin-top: 5px;
+	position: relative;
+	color: $dgrey;
+	font-size: 18px;
+	line-height: 60px;
+	background: #EEE;
+	cursor: pointer;
+	@include transition(all .3s ease-in);
+	&:hover {
+		background: #CCC;
+	}
+	.plus {
+		position: absolute;
+		right: 25px;
+		top: 0;
+		font-size: 24px;
+		color: $blue;
+	}
+}
+
+.accordian-content {
+	border-top: 1px solid #CCC;
+	padding: 40px;
+	text-align: left;
+	overflow: hidden;
+	display: none;
+	background: #EEE;
+	ul, ol {
+		margin-top: 10px;
+		padding-left: 20px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	ul li {
+		list-style: initial;
+	}
+	ol li {
+		list-style: decimal;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+}
+
+#register {
+	border-top: 3px solid $blue;
+	.btn {
+		margin-bottom: 40px;
+	}
+}
+
+.btn {
+	color: $blue;
+	font-size: 24px;
+	display: inline-block;
+	padding: 10px 60px;
+	border: 3px solid $blue;
+	@include transition(all .3s ease-in);
+	&:hover {
+		background: $blue;
+		color: $white;
+	}
+}
+
+.map {
+	width: 100%;
+	padding: 0 20px;
+	background: url(../img/map.jpg) center;
+	background-size: cover;
+	border-top: 3px solid $blue;
+	border-bottom: 3px solid $blue;
+}
+
+.map-location {
+	width: 100%;
+	max-width: 550px;
+	position: relative;
+	margin: 60px auto;	
+	background: $white;
+	padding: 40px 20px;
+	border: 3px solid $blue;
+	h2 {
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.arrow {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: -47px;
+	left: 48%;
+	right: 0;
+	z-index: 2;
+	background: url(../img/arrow.png) no-repeat;
+}
+
+footer {
+	a {
+		color: $blue;
+		&:hover {
+			color: $dgrey;
+		}
+	}
+	p {
+		max-width: 650px;
+		margin: 0 auto 40px auto;
+	}
+}
+
+@media ($min_bp_a) {
+	header {
+		padding: 100px 20px;
+	}
+
+	.info {
+		margin-top: 0px;
+	}
+
+	.logos {
+		margin-top: 80px;
+		p {
+			margin-bottom: 0;
+		}
+		img {
+			margin-bottom: 40px;	
+			padding: 0;
+		}
+	}
+
+	.map-location {
+		margin: 125px auto;	
+	}
+}
+
+
+@media ($min_bp_b) {
+
+	.accordian {
+		margin-top: 40px;
+	}
+
+	.logos {
+		margin: 40px 120px;
+		img {
+			margin-top: 10px;
+			margin-bottom: 0px
+		}
+	}
+}
