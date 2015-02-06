@@ -369,7 +369,7 @@ header #logo2 {
 }
 
 .logos {
-  margin: 40px 120px;
+  margin: 40px 40px;
 }
 .logos p {
   margin-bottom: 0;
@@ -377,6 +377,10 @@ header #logo2 {
 .logos img {
   padding: 0px 20px;
   margin-top: 20px;
+}
+
+.blank {
+  display: none;
 }
 
 #concept-row {
@@ -591,6 +595,10 @@ footer p {
   .logos img {
     margin-bottom: 40px;
     padding: 0;
+  }
+
+  .blank {
+    display: block;
   }
 
   #concept-row {
