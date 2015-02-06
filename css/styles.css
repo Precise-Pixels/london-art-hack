@@ -380,13 +380,14 @@ header #logo2 {
 }
 
 #concept-row {
-  margin: 40px 0;
+  margin: 0;
   width: 100%;
   height: auto;
   overflow: hidden;
 }
 
 .concept {
+  margin-top: 20px;
   background: #EEE;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -590,6 +591,14 @@ footer p {
   .logos img {
     margin-bottom: 40px;
     padding: 0;
+  }
+
+  #concept-row {
+    margin: 40px 0;
+  }
+
+  .concept {
+    margin-top: 0px;
   }
 
   .map-location {
